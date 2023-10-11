@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&display=swap');
+body {
+    background: rgba(47, 24, 147, 1);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+}
+.header {
+    display: flex;
+    font-weight: 500;
+    width: fit-content;
+    margin: 3rem auto;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    font-size: 1.5rem;
+}
+.header ul {
+    display: flex;
+    margin: auto;
+    margin-left: 24vw;
+    align-items: center;
+    justify-content: center;
+}
+/* .header ul li:first-child a {
+    color: grey;
+} */
+.header li {
+    list-style-type: none;
+    display: flex;
+}
+.header a {
+    text-decoration: none;
+    margin-left: 2rem;
+    color: #fff;
+    transition: all 0.3s;
+}
+.header a:hover {
+    color: grey;
+}
+.header .purchase-button {
+    margin-left: 1.5rem;
+    width: 120px;
+    height: 40px;
+    background-color: #E93A7D;
+    color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.header .purchase-button:hover {
+    background-color: #96244f;
+}
+.header .purchase-button a {
+    color: #fff;
+    margin: auto;
+}
+.content {
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+    margin: auto;
+}
+.sub-content {
+    width: 30%;
+    /* border-radius: 15px; */
+}
+.content .signup-content {
+    background: #fff;
+}
+.generate-awesome h1 {
+    width: 90%;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.generate-awesome p {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 58%;
+}
+.generate-awesome button {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    width: 28%;
+    background: rgba(233, 58, 125, 1);
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 1.5rem;
+}
+.generate-awesome button:hover {
+    background: rgb(150, 34, 78);
+}
+.sub-content .signup {
+    text-align: center;
+}
+.signup h1 {
+    margin: 2rem auto;
+    font-weight: 800;
+    color: rgba(30, 14, 98, 1);
+}
+input[type="email"],
+input[type="password"] {
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 20px;
+    border: 0.5px solid grey;
+    padding: 12px;
+    display: block;
+    margin: 1rem auto;
+    width: 70%;
+}
+.checkbox-group {
+    margin: 1.5rem 13%;
+    text-align: left;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.custom-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(37, 218, 197, 1);
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+}
+
+.custom-checkbox:checked {
+    background: rgba(37, 218, 197, 1);
+}
+
+.custom-checkbox:checked::before {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: 800;
+    color:rgba(30, 14, 98, 1);
+}
+
+.custom-label {
+    color: grey;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+.signup-button {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    width: 70%;
+    background: rgba(72, 43, 231, 1);
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.signup-button:hover {
+    background: rgb(29, 11, 131)
+}
+.line-container {
+    width: 70%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid grey;
+    opacity: 0.6;
+}
+
+.or-text {
+    margin: 0 10px;
+    color: grey;
+    opacity: 0.6;
+}
+.twitter {
+    background: rgba(29, 161, 242, 1);
+}
+.twitter:hover {
+    background: rgb(16, 99, 151);
+}
+.signup p {
+    color: grey;
+    opacity: 0.8;
+    margin: 2rem auto;
+}
+.signup a {
+    text-decoration: none;
+    margin-left: 0.5rem;
+    color: rgba(37, 218, 197, 1);
+    transition: all 0.3s;
+}
+.signup a:hover {
+    color: rgb(48, 117, 94);
+}
+
+@media (max-width: 1050px) {
+    .content {
+        display: block;
+        align-items: center;
+    }
+    .sub-content {
+        width: 60%;
+        margin: 2rem auto;
+    }
+    .signup {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 882px) {
+    .header ul {
+        margin-left: 0vw;
+    }
+    .sub-content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 670px) {
+    .header ul {
+        font-size: 0.7rem;
+        margin-left: 0;
+    }
+    .logo {
+        font-size: 1.1rem;
+    }
+}
